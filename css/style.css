@@ -22,6 +22,59 @@ body{
     background-color: black;
 }
 
+.topo{
+    width: 100%;
+    height: 5em;
+   /* background-color: cadetblue;*/
+}
+
+
+.topo img{
+    max-width: 15em;
+    width: 240px;
+    padding-left: 1.875em;
+}
+
+
+.content{
+    width: 80%;
+    height: 100%;
+    max-width: 75em ;
+    margin: auto;
+   /* background-color: coral;*/
+}
+
+.flex-center-bt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 100%;
+    max-width: 50em;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.9em 1em;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    background-color: #c20000;
+    padding: 2git add .0px;
+}
+
 @media screen and (max-width:1999px){
     
 }
