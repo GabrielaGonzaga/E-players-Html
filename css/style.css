@@ -75,7 +75,7 @@ img{
 }
 .banner-position{
     width: 100%;
-    height: 100%;
+    height: 33em;
     /* background-color: rgba(0, 0, 255, 0.377); */
     position: absolute;
     top: 0;
@@ -99,13 +99,13 @@ img{
     color: #fff;
 }
 .banner-text h1{
-    font-size: 5.62em;
+    font-size: 5em;
 }
 .banner-text p{
-    font-size: 1.87em;
+    font-size: 1.70git add .em;
 }
 .banner-text a{
-    font-size: 1.70git add .em;
+    font-size: 1.87em;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
