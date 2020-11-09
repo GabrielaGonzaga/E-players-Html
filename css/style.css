@@ -1,12 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root{
 
     --background: #000000;
     --red: #C20000;
     --blue: #001F70;
-    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --black1: #1E1C21;
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
 
     --font: 'Titillium Web', sans-serif;
 }
@@ -31,9 +32,9 @@ img{
     /* background-color: azure; */
 }
 .content{
-    width: 80%;
+    width: 95%;
     height: 100%;
-    max-width: 75em;
+    /*max-width: 75em;*/
     margin: auto;
     /* background-color: burlywood; */
 }
@@ -47,7 +48,7 @@ img{
 
 }
 .menu{
-    width: 100%;
+    width: 75%;
     max-width: 50em;
 }
 .menu ul{
@@ -75,13 +76,13 @@ img{
 }
 .banner-position{
     width: 100%;
-    height: 33em;
+    height: 100%;
     /* background-color: rgba(0, 0, 255, 0.377); */
     position: absolute;
     top: 0;
 }
 .banner-content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     /* background-color: rgba(222, 184, 135, 0.356); */
     margin: auto;
@@ -99,10 +100,10 @@ img{
     color: #fff;
 }
 .banner-text h1{
-    font-size: 5em;
+    font-size: 5.62em;
 }
 .banner-text p{
-    font-size: 1.77em;
+    font-size: 1.87em;
 }
 .banner-text a{
     font-size: 1.87em;
@@ -110,22 +111,20 @@ img{
     color: #fff;
     text-decoration: none;
     background-color: var(--red);
-    padding: 0.5em 0.8em;
-    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
     margin-top: 1em;
 }
-
 .jogos{
     width: 100%;
-    height: 6em;
+    height: 7.5em;
+    color:#fff;
+    /* background-color: chartreuse; */
 }
-
 .jogos ul{
     list-style-type: none;
     width: 100%;
-    margin-top: 10px;
 }
-
 .jogos ul a:hover img{
     transition: 0.2s;
     transform: scale(1.1);
@@ -149,12 +148,11 @@ img{
     width: 100%;
     height: 24em;
     background-color: #000;
-    transform: skewy(-3deg)
+    transform: skewY(-3deg)
 }
 .about-position{
     width: 100%;
     height: 100%;
-    /* background-color: rgba(255, 0, 0, 0.397); */
     position: absolute;
     top: 0;
 }
@@ -164,24 +162,439 @@ img{
     text-align: justify;
 }
 .about-text h2{
-    font-size: 2.30em ;
+    font-size: 2.18em;
     margin-bottom: 0.5em;
 
 }
 .about-text p{
-    font-size: 1.06em;
+    font-size: 1.125em;
     margin-bottom: 1em;
 }
 .about-position img{
     max-width: 31.87em;
 }
+.jogos-aovivo, .jogos-embreve{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.575em; /*25,12px*/
+    /* border-right:solid 1px #fff; */
+}
+.jogos-aovivo h2, .jogos-embreve h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.linha{
+    
+    height: 3em;
+    border:solid 1px #fff;
+}
+
+.partida{
+    width: 9.5em;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1em;
+}
+.partida img{
+    max-width: 1.8em; /*54px*/
+}
+.time1, .time2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+
+}
+.time1 img{
+    margin-left: 0.5em;
+}
+.time2 img{
+    margin-right: 0.5em;
+}
+.bg-noticias{
+    width: 100%;
+    height: auto;
+    background-color: var(--black1);
+}
+.noticias{
+    width: 70%;
+    height: 90%;
+    /* background-color: darkgray; */
+}
+.noticias h2, .proximos-jogos h2{
+    color: #fff;
+    margin: 0.5em 0;
+    font-size: 2.1875em;
+    text-transform: uppercase;
+}
+.proximos-jogos{
+    width: 23%;
+    height:auto;
+}
+.newscard{
+    width: 100%;
+    max-width: 15em;
+    height: 23.125em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 1.5em;
+    box-shadow: 0px 0px 15px rgb(59, 59, 59);
+}
+.noticias h3{
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+.noticias p{
+    padding: 0em 0.7em;
+    /* text-align: justify; */
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.proximas-partidas{
+    width: 100%;
+    background: var(--gradient);
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgb(59, 59, 59);
+
+
+
+}
+.game{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+}
+.times{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.times div{
+    display: flex;
+    align-items: center;
+}
+.times p{
+    font-size: 1.25em;
+    font-family: 'Roboto';
+}
+.times > p{
+    margin: 0 1em;
+}
+.times img{
+    width: 2.5em;
+}
+.rodape{
+    padding: 1em 0;
+    color:#fff;
+}
+.logo-rodape{
+    max-width: 13.60em;
+}
+.links-footer{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+.links h2{
+    font-size: 1.5em;
+    color: #fff;
+
+}
+.links ul{
+    color:#fff;
+    margin-top: 0.5em;
+}
+.links li{
+    margin-left: 2em;
+}
+.links a{
+    text-decoration: none;
+    color:#fff;
+}
+.sociais{
+    width: 33%;
+
+}
+.newslatter h2{
+    font-size: 0.875em;
+    margin-bottom: 0.5em;
+}
+.newslatter form{
+    display: flex;
+}
+.newslatter input[type="email"]{
+    width: 12.5em;
+    height: 2.5em;
+    font-size: 1.1em;
+    padding-left: 1em;
+}
+.newslatter input[type="email"]::placeholder{
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+}
+.newslatter input[type="submit"]{
+    width: 9.75em;
+    height: 2.5em;
+    font-size: 1.1em;
+    background-color: #8326EF;
+    color: #fff;
+    text-transform: uppercase;
+}
+.siga-nos{
+    margin-top: 1em;
+}
+
+.siga-nos img{
+    justify-content: space-between;
+}
+
+.insta{
+    max-width:120px ;
+    
+}
+
+.fcbk{
+    width: 70px;
+    margin-right: 35px;
+}
+
+.yt{
+    width: 60px;
+}
+/* página cadastro */
+
+
 @media screen and (max-width: 74.93em){
+    .topo img{
+        max-width: 180px;
+    }
+    .menu{
+    width: 75%;
+    }
 
+    .menu a{
+        font-size: 22px;
+    }
+
+    .banner-text h1{
+        font-size: 60px;
+    }
+    .banner-text p{
+        font-size: 25px;
+    }
+    
+    .banner-text a{
+       font-size: 25px;
+    }
+
+    .menu ul{
+        font-size: 15px;
+    }
+
+    .jogos-aovivo h2{
+        font-size: 15px;
+    }
 }
 
-@media screen and (max-width: 47.93em){
+@media screen and (max-width: 1030px){
+    .about-text{
+        font-size: 14px;
+    }
 
+    .about-position img{
+        max-width: 500px;
+    }
+
+    .jogos-aovivo h2{
+        font-size: 25px;
+     }
+ 
+    .jogos-embreve h2{
+        font-size: 25px;
+    }
 }
+
+
+
+@media screen and (max-width: 61.9375em){
+    
+    .banner-text h1{
+        font-size: 50px;
+    }
+    .banner-text p{
+        font-size: 20px;
+    }
+    
+    .banner-text a{
+       font-size: 25px;
+    }
+
+    .jogos{
+        
+        flex-direction: column;
+    }
+
+    .about-text{
+        font-size: 13px;
+    }
+
+    .about-position img{
+        max-width: 400px;
+    }
+   
+   
+    
+}
+
+@media screen and (max-width: 951px){
+    .menu a{
+        font-size: 18px;
+    }
+
+    .jogos-aovivo h2{
+        font-size: 25px;
+     }
+ 
+    .jogos-embreve h2{
+        font-size: 25px;
+    }
+    
+    .time1,.time2 p{
+        font-size: 25px;
+        
+        margin-right: 30px;
+    }
+
+    .time1,.time2 img{
+        max-width: 30px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .menu a{
+        font-size: 16px;
+    }
+
+    .jogos-aovivo h2{
+        font-size: 20px;
+     }
+ 
+    .jogos-embreve h2{
+        font-size: 20px;
+    }
+    .time1,.time2 p{
+        font-size: 20px;
+        
+        margin-right: 40px;
+    }
+
+    .time1,.time2 img{
+        max-width: 35px;
+    }
+    .time1 img{
+        max-width: 35px;
+    }
+    .pjogos{
+        font-size: 20px;
+       
+    }
+
+    .wrapp{
+        flex-wrap: wrap;
+    }
+    .linha{
+       display: none;
+    }
+}
+@media screen and (max-width: 48em){
+    .topo img{
+        max-width: 150px;
+    }
+
+    .menu a{
+        font-size: 14px;
+    }
+
+    .menubars{
+        display: block;
+    }
+
+    .banner-text h1{
+        font-size: 45px;
+    }
+    .banner-text p{
+        font-size: 15px;
+    }
+    
+    .banner-text a{
+       font-size: 15px;
+    }
+
+    .about-text{
+        font-size: 10px;
+    }
+
+    .about-position img{
+        max-width: 350px;
+    }
+
+
+    .jogos-aovivo h2{
+        font-size: 20px;
+     }
+ 
+    .jogos-embreve h2{
+        font-size: 20px;
+    }
+
+    .time1,.time2 p{
+        font-size: 15px;
+        
+        margin-right: 30px;
+    }
+
+    .time1,.time2 p{
+        font-size: 20px;
+        
+        margin-right: 40px;
+    }
+
+    .time1,.time2 img{
+        max-width: 35px;
+    }
+    .time1 img{
+        max-width: 35px;
+    }
+    .pjogos{
+        font-size: 20px;
+       
+    }
+
+    .wrapp{
+        flex-wrap: wrap;
+    }
+    .linha{
+        margin-right: 400px;
+    }
+    .noticias{
+
+    }
+    .noticias h2{
+        font-size: 30px;
+    }
+   
+}
+
 
 @media screen and (max-width: 35.93em){
    
